@@ -7,3 +7,22 @@ body {
 	background-repeat: no-repeat;
 	font-family: 'Manrope', sans-serif;
 }
+
+
+
+#range-slider::-webkit-slider-thumb {
+	/* -webkit-appearance: none; */
+	background-color: hsl(174, 86%, 45%);
+	background-image: url("/public/images/icon-slider.svg");
+	padding: 0.7rem;
+	border-radius: 20px;
+	border: none;
+}
+
+#range-slider::-moz-range-thumb {
+	/* -webkit-appearance: none; */
+	background: hsl(174, 86%, 45%) url("/public/images/icon-slider.svg") center no-repeat;
+	padding: 0.7rem;
+	border-radius: 20px;
+	border: none;
+}
