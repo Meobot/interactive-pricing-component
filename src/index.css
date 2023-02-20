@@ -5,7 +5,11 @@
 body {
 	background-image: url(./images/bg-pattern.svg);
 	background-repeat: no-repeat;
+	background-size: 100% 60%;
+	background-color: hsl(230, 100%, 99%);
 	font-family: 'Manrope', sans-serif;
+	display: flex;
+	justify-content: center;
 }
 
 #range-slider::-webkit-slider-thumb {
@@ -15,6 +19,7 @@ body {
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
+	filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgba(146, 145, 145, 0.1));
 }
 
 #range-slider::-moz-range-thumb {
@@ -23,6 +28,7 @@ body {
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
+	filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 14px 7px rgba(146, 145, 145, 0.1));
 }
 
 #range-slider::-webkit-slider-thumb:active {
