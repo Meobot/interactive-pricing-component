@@ -9,6 +9,9 @@ module.exports = {
 		backgroundImage: {
 			'Header-bg': "url('/images/pattern-circles.svg')"
 		},
+		width: {
+			"375": "375px"
+		},
 		colors: {
 			softCyan: "hsl(174, 77%, 80%)",
 			strongCyan: "hsl(174, 86%, 45%)",

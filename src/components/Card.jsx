@@ -14,8 +14,8 @@ export default function Card() {
   };
 
   return (
-    <div className="flex flex-col w-11/12 mt-7 pb-12 bg-white items-center rounded-lg shadow-xl shadow-gray-200">
-      <p className="py-8 text-grayishBlue text-xs font-bold tracking-widest">
+    <div className="flex flex-col w-375 mt-7 pb-12 bg-white items-center rounded-lg shadow-xl shadow-gray-200">
+      <p className="py-12 text-grayishBlue text-xs font-bold tracking-widest">
         100K PAGEVIEWS
       </p>
 
@@ -26,23 +26,23 @@ export default function Card() {
         max="20"
         value={sliderPos}
         step="5"
-        className="w-11/12 h-2 rounded-lg cursor-pointer bg-strongCyan"
+        className="w-10/12 h-2 rounded-lg cursor-pointer bg-strongCyan"
+		style={backgroundStyle}
         onChange={handleChange}
-        style={backgroundStyle}
       ></input>
 
-      <div className="flex space-x-3 items-center mt-10">
-        <p className="font-bold text-4xl">$16.00</p>
+      <div className="flex space-x-3 items-center mt-8">
+        <p className="font-bold text-4xl py-3">$16.00</p>
         <p className="text-grayishBlue">/ month</p>
       </div>
 
 		<div className="flex justify-end items-end">
-			<div className="flex text-grayishBlue text-sm space-x-12 mt-8 mr-2">
+			<div className="flex text-grayishBlue text-sm space-x-9 mt-8 mr-2">
 				<p>Monthly Billing</p>
 				<label className="relative">
 					<input type="checkbox" />
 					<span 
-					className="slider w-11 h-6 absolute cursor-pointer bg-lightGrayishBlue transition-all duration-400 rounded-full -ml-6">
+					className="slider w-11 h-6 absolute cursor-pointer bg-lightGrayishBlue transition-all duration-400 rounded-full -ml-6 hover:bg-strongCyan">
 					</span>
 				</label>
 				<p>Yearly Billing</p>
@@ -54,19 +54,23 @@ export default function Card() {
 
 		<hr className="w-full mt-11"/>
 
-		<div className="flex flex-col items-center">
-			<div className="flex">
-				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+		<div className="flex flex-col items-center mt-8 whitespace-nowrap text-xs text-grayishBlue space-y-3 font-semibold">
+			<div className="flex space-x-4 items-center">
+				<img className="max-h-2" src="./public/images/icon-check.svg" alt="image of a check mark" />
 				<p>Unlimited websites</p>
 			</div>
-			<div className="flex">
-				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+			<div className="flex space-x-4 items-center">
+				<img className="max-h-2" src="./public/images/icon-check.svg" alt="image of a check mark" />
 				<p>100% data ownership</p>
 			</div>
-			<div className="flex">
-				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+			<div className="flex space-x-4 items-center">
+				<img className="max-h-2" src="./public/images/icon-check.svg" alt="image of a check mark" />
 				<p>Email reports</p>
 			</div>
+		</div>
+
+		<div className="bg-desaturatedBlue py-3.5 px-12 mt-9 -mb-2 rounded-full">
+			<p className="text-paleBlue text-xs font-bold tracking-wide hover:text-white cursor-pointer">Start my trial</p>
 		</div>
 
 

@@ -12,7 +12,7 @@ body {
 	/* -webkit-appearance: none; */
 	background-color: hsl(174, 86%, 45%);
 	background-image: url("/public/images/icon-slider.svg");
-	padding: 0.7rem;
+	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
 }
@@ -20,9 +20,27 @@ body {
 #range-slider::-moz-range-thumb {
 	/* -webkit-appearance: none; */
 	background: hsl(174, 86%, 45%) url("/public/images/icon-slider.svg") center no-repeat;
-	padding: 0.7rem;
+	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
+}
+
+#range-slider::-webkit-slider-thumb:active {
+	/* -webkit-appearance: none; */
+	background: hsl(174, 85%, 34%) url("/public/images/icon-slider.svg") center no-repeat;
+	padding: 0.8rem;
+	border-radius: 20px;
+	border: none;
+	cursor: grabbing;
+}
+
+#range-slider::-moz-range-thumb:active {
+	/* -webkit-appearance: none; */
+	background: hsl(174, 85%, 34%) url("/public/images/icon-slider.svg") center no-repeat;
+	padding: 0.8rem;
+	border-radius: 20px;
+	border: none;
+	cursor: grabbing;
 }
   
 input[type=checkbox] {
@@ -30,6 +48,10 @@ input[type=checkbox] {
 	width: 0;
 	height: 0;
 }
+
+input[type="range"]:active {
+	cursor: grabbing;
+  }
 
 .slider:before {
 position: absolute;
