@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-export default function Pricing() {
+export default function Card() {
   const [sliderPos, setSliderPos] = useState(10);
 
   const handleChange = (e) => {
@@ -51,6 +51,24 @@ export default function Pricing() {
 				<p className="text-lightRed text-xs">-25%</p>
 			</div>
 		</div>
+
+		<hr className="w-full mt-11"/>
+
+		<div className="flex flex-col items-center">
+			<div className="flex">
+				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+				<p>Unlimited websites</p>
+			</div>
+			<div className="flex">
+				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+				<p>100% data ownership</p>
+			</div>
+			<div className="flex">
+				<img src="./public/images/icon-check.svg" alt="image of a check mark" />
+				<p>Email reports</p>
+			</div>
+		</div>
+
 
     </div>
   );
