@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	background-image: url(./images/bg-pattern.svg);
+	background-image: url(/images/bg-pattern.svg);
 	background-repeat: no-repeat;
 	background-size: 100% 60%;
 	background-color: hsl(230, 100%, 99%);
@@ -15,7 +15,7 @@ body {
 #range-slider::-webkit-slider-thumb {
 	/* -webkit-appearance: none; */
 	background-color: hsl(174, 86%, 45%);
-	background-image: url("/public/images/icon-slider.svg");
+	background-image: url("/images/icon-slider.svg");
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
@@ -24,7 +24,7 @@ body {
 
 #range-slider::-moz-range-thumb {
 	/* -webkit-appearance: none; */
-	background: hsl(174, 86%, 45%) url("/public/images/icon-slider.svg") center no-repeat;
+	background: hsl(174, 86%, 45%) url("/images/icon-slider.svg") center no-repeat;
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
@@ -33,7 +33,7 @@ body {
 
 #range-slider::-webkit-slider-thumb:active {
 	/* -webkit-appearance: none; */
-	background: hsl(174, 85%, 34%) url("/public/images/icon-slider.svg") center no-repeat;
+	background: hsl(174, 85%, 34%) url("/images/icon-slider.svg") center no-repeat;
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
@@ -42,7 +42,7 @@ body {
 
 #range-slider::-moz-range-thumb:active {
 	/* -webkit-appearance: none; */
-	background: hsl(174, 85%, 34%) url("/public/images/icon-slider.svg") center no-repeat;
+	background: hsl(174, 85%, 34%) url("/images/icon-slider.svg") center no-repeat;
 	padding: 0.8rem;
 	border-radius: 20px;
 	border: none;
